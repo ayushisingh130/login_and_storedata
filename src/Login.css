@@ -9,11 +9,11 @@
   border: none;
   outline: none;
   width: 100%;
-  padding: 10px 0;
+  padding: 6px 0;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
-  background: rgb(120, 153, 253);
+  background: rgb(140, 163, 235);
   cursor: pointer;
 }
 
@@ -62,13 +62,13 @@
   padding: 24px 0;
 }
 .login .loginContainer .btnContainer p span {
-  color: rgb(62, 173, 177);
+  color: rgb(97, 115, 170);
   background-color: whitesmoke;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.5px;
   margin-left: 5px;
-  padding: 1%;
+  padding: 1% 2%;
   cursor: pointer;
   transition: all 400ms ease-in-out;
 }
