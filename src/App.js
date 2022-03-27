@@ -1,11 +1,11 @@
 import React from "react";
-import Homepage from "./Homepage";
-import "./index.css";
-
+import Login from "./Login";
 const App = () => {
-    return(
-        <Homepage/>
-    );
-}
+  return (
+    <div className="App">
+      <Login />
+    </div>
+  );
+};
 
 export default App;
