@@ -11,21 +11,19 @@ const Homepage = () => {
     setindex(e.target.id);
   };
 
-  const postData = async () => {
-    const res = fetch(
-      "https://react-storeindex-default-rtdb.firebaseio.com/useData.json",
-      {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({
-          index,
-          value,
-        }),
-      }
-    );
+  const postData = async (e) => {
+    const res = fetch(`${process.env.REACT_APP_DATABASE_URL}/useData.json`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        index,
+        value,
+      }),
+    });
 
+    e.preventDefault();
     if (res) {
       alert("Details Submitted");
     } else {
